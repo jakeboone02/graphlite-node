@@ -1,6 +1,6 @@
 {
   "name": "@jakeboone02/graphlite-node",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Node.js bindings for GraphLite embedded graph database (ISO GQL)",
   "license": "MIT",
   "main": "index.js",
@@ -56,10 +56,10 @@
     "native"
   ],
   "optionalDependencies": {
-    "@jakeboone02/graphlite-node-linux-x64-gnu": "0.0.1",
-    "@jakeboone02/graphlite-node-linux-arm64-gnu": "0.0.1",
-    "@jakeboone02/graphlite-node-darwin-x64": "0.0.1",
-    "@jakeboone02/graphlite-node-darwin-arm64": "0.0.1",
-    "@jakeboone02/graphlite-node-win32-x64-msvc": "0.0.1"
+    "@jakeboone02/graphlite-node-linux-x64-gnu": "0.0.2",
+    "@jakeboone02/graphlite-node-linux-arm64-gnu": "0.0.2",
+    "@jakeboone02/graphlite-node-darwin-x64": "0.0.2",
+    "@jakeboone02/graphlite-node-darwin-arm64": "0.0.2",
+    "@jakeboone02/graphlite-node-win32-x64-msvc": "0.0.2"
   }
 }
