@@ -85,10 +85,8 @@ jobs:
       - uses: actions/download-artifact@v4
         with:
           path: artifacts
-      - name: Prepare packages
-        run: |
-          ./node_modules/.bin/napi artifacts --build-output-dir artifacts
-          ./node_modules/.bin/napi prepublish -t npm
+      - name: Move artifacts
+        run: ./node_modules/.bin/napi artifacts --build-output-dir artifacts
       - name: List packages
         shell: bash
         run: ls -R npm/

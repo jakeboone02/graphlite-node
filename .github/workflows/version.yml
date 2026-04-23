@@ -49,8 +49,16 @@ jobs:
         run: |
           VERSION_ARG="${{ inputs.versionBump == 'custom' && inputs.customVersion || inputs.versionBump }}"
           npm version "$VERSION_ARG" --no-git-tag-version
-          ./node_modules/.bin/napi version
           NEW_VERSION=$(node -p "require('./package.json').version")
+          ./node_modules/.bin/napi version
+          node -e "
+            const fs = require('fs');
+            const pkg = JSON.parse(fs.readFileSync('package.json', 'utf8'));
+            for (const dep of Object.keys(pkg.optionalDependencies || {})) {
+              pkg.optionalDependencies[dep] = pkg.version;
+            }
+            fs.writeFileSync('package.json', JSON.stringify(pkg, null, 2) + '\n');
+          "
           if [ "${{ inputs.runType }}" = "Live" ]; then
             git add -u
             git commit -m "v$NEW_VERSION"
