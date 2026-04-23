@@ -1,6 +1,6 @@
 {
   "name": "@jakeboone02/graphlite-node-linux-arm64-gnu",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "cpu": [
     "arm64"
   ],
