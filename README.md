@@ -7,19 +7,6 @@ Node.js bindings for [GraphLite](https://github.com/GraphLite-AI/GraphLite), an 
 - [Rust toolchain](https://rustup.rs/) (for building from source)
 - Node.js >= 18 or Bun
 
-## Development
-
-```bash
-# Install JS dependencies
-bun install
-
-# Build the native addon (requires Rust)
-bun run build
-
-# Run tests
-bun test
-```
-
 ## Usage
 
 ```ts
@@ -63,6 +50,19 @@ interface QueryResult {
   rows: Record<string, unknown>[];
   rowCount: number;
 }
+```
+
+## Development
+
+```bash
+# Install JS dependencies
+bun install
+
+# Build the native addon (requires Rust)
+bun run build
+
+# Run tests
+bun test
 ```
 
 ## License
