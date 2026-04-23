@@ -10,6 +10,13 @@
         "@types/node": "^25.6.0",
         "vitest": "^4.1.5",
       },
+      "optionalDependencies": {
+        "@jakeboone02/graphlite-node-darwin-arm64": "0.0.1",
+        "@jakeboone02/graphlite-node-darwin-x64": "0.0.1",
+        "@jakeboone02/graphlite-node-linux-arm64-gnu": "0.0.1",
+        "@jakeboone02/graphlite-node-linux-x64-gnu": "0.0.1",
+        "@jakeboone02/graphlite-node-win32-x64-msvc": "0.0.1",
+      },
     },
   },
   "packages": {
@@ -102,6 +109,16 @@
     "@inquirer/select": ["@inquirer/select@5.1.4", "", { "dependencies": { "@inquirer/ansi": "^2.0.5", "@inquirer/core": "^11.1.9", "@inquirer/figures": "^2.0.5", "@inquirer/type": "^4.0.5" }, "peerDependencies": { "@types/node": ">=18" }, "optionalPeers": ["@types/node"] }, "sha512-2kWcGKPMLAXAWRp1AH1SLsQmX+j0QjeljyXMUji9WMZC8nRDO0b7qquIGr6143E7KMLt3VAIGNXzwa/6PXQs4Q=="],
 
     "@inquirer/type": ["@inquirer/type@4.0.5", "", { "peerDependencies": { "@types/node": ">=18" }, "optionalPeers": ["@types/node"] }, "sha512-aetVUNeKNc/VriqXlw1NRSW0zhMBB0W4bNbWRJgzRl/3d0QNDQFfk0GO5SDdtjMZVg6o8ZKEiadd7SCCzoOn5Q=="],
+
+    "@jakeboone02/graphlite-node-darwin-arm64": ["@jakeboone02/graphlite-node-darwin-arm64@0.0.1", "", { "os": "darwin", "cpu": "arm64" }, "sha512-HKjcoAYTfWEnEUcnFAFZKgd/sA1oIOKkv1jmX4n8UMWzFPl2OZ1awZ/l9Ffhlu3uW3UYRWLgyW7X6cXT8SFwPA=="],
+
+    "@jakeboone02/graphlite-node-darwin-x64": ["@jakeboone02/graphlite-node-darwin-x64@0.0.1", "", { "os": "darwin", "cpu": "x64" }, "sha512-qJLn6wqdkkVlTcM8yPcPoqgca9ClF0CK7tx3J9tT2d49rqhs9GsNtBhl7LU5wyY2240z1kBWBDSBHXqPvncJtw=="],
+
+    "@jakeboone02/graphlite-node-linux-arm64-gnu": ["@jakeboone02/graphlite-node-linux-arm64-gnu@0.0.1", "", { "os": "linux", "cpu": "arm64" }, "sha512-lwisuP5Xm/UXDsr+cBpcNS6YBMIttU0GdB962x0PdlPJi7nIgG2yAQDOVGH1khbpera2vXHM8oiI50Xa2FircA=="],
+
+    "@jakeboone02/graphlite-node-linux-x64-gnu": ["@jakeboone02/graphlite-node-linux-x64-gnu@0.0.1", "", { "os": "linux", "cpu": "x64" }, "sha512-d9LZcMnT0JymQKj0mjhtY7pRwesvib7yMTAo8L+7MdOpQsXwul1BKrMaq6GbwS17oY+mSZFJ99w5o417DTCKJA=="],
+
+    "@jakeboone02/graphlite-node-win32-x64-msvc": ["@jakeboone02/graphlite-node-win32-x64-msvc@0.0.1", "", { "os": "win32", "cpu": "x64" }, "sha512-emBHdDnmxs4QcfZBE7WnS0pY8EPV+/DwJ+gRlIu8B2n2suKLzp+iS6MVd6bef9/fVOL9YUvYEULPdehgNgNlSQ=="],
 
     "@jridgewell/sourcemap-codec": ["@jridgewell/sourcemap-codec@1.5.5", "", {}, "sha512-cYQ9310grqxueWbl+WuIUIaiUaDcj7WOq5fVhEljNVgRfOUhY9fy2zTvfoqWsnebh8Sl70VScFbICvJnLKB0Og=="],
 
