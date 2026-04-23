@@ -55,7 +55,7 @@ jobs:
           if [ "${{ matrix.target }}" = "aarch64-unknown-linux-gnu" ]; then
             export CARGO_TARGET_AARCH64_UNKNOWN_LINUX_GNU_LINKER=aarch64-linux-gnu-gcc
           fi
-          napi build --platform --release --target ${{ matrix.target }}
+          npx napi build --platform --release --target ${{ matrix.target }}
       - uses: actions/upload-artifact@v4
         with:
           name: bindings-${{ matrix.target }}
@@ -87,8 +87,8 @@ jobs:
           path: artifacts
       - name: Prepare packages
         run: |
-          napi artifacts --dir artifacts
-          napi prepublish -t npm
+          npx napi artifacts --dir artifacts
+          npx napi prepublish -t npm
       - name: List packages
         shell: bash
         run: ls -R npm/
