@@ -1,0 +1,33 @@
+{
+  "name": "@jakeboone02/graphlite-node-darwin-x64",
+  "version": "0.0.1",
+  "cpu": [
+    "x64"
+  ],
+  "main": "graphlite-node.darwin-x64.node",
+  "files": [
+    "graphlite-node.darwin-x64.node"
+  ],
+  "description": "Node.js bindings for GraphLite embedded graph database (ISO GQL)",
+  "keywords": [
+    "graphlite",
+    "graph",
+    "database",
+    "gql",
+    "iso-gql",
+    "embedded",
+    "napi",
+    "native"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">= 18"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jakeboone02/graphlite-node.git"
+  },
+  "os": [
+    "darwin"
+  ]
+}

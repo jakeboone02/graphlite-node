@@ -1,0 +1,36 @@
+{
+  "name": "@jakeboone02/graphlite-node-linux-arm64-gnu",
+  "version": "0.0.1",
+  "cpu": [
+    "arm64"
+  ],
+  "main": "graphlite-node.linux-arm64-gnu.node",
+  "files": [
+    "graphlite-node.linux-arm64-gnu.node"
+  ],
+  "description": "Node.js bindings for GraphLite embedded graph database (ISO GQL)",
+  "keywords": [
+    "graphlite",
+    "graph",
+    "database",
+    "gql",
+    "iso-gql",
+    "embedded",
+    "napi",
+    "native"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">= 18"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jakeboone02/graphlite-node.git"
+  },
+  "os": [
+    "linux"
+  ],
+  "libc": [
+    "glibc"
+  ]
+}

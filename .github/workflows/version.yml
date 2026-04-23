@@ -49,6 +49,7 @@ jobs:
         run: |
           VERSION_ARG="${{ inputs.versionBump == 'custom' && inputs.customVersion || inputs.versionBump }}"
           npm version "$VERSION_ARG" --no-git-tag-version
+          ./node_modules/.bin/napi version
           NEW_VERSION=$(node -p "require('./package.json').version")
           if [ "${{ inputs.runType }}" = "Live" ]; then
             git add -u
